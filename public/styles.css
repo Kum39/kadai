@@ -1,0 +1,69 @@
+/* ベースのスタイル */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダーのスタイル */
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-top: 20px;
+}
+
+/* アイテムリストのスタイル */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item-name {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.item-name:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-5px);
+}
+
+/* ボタンのスタイル */
+.send-button {
+  display: block;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* フォームのスタイル */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
