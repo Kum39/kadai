@@ -1,22 +1,26 @@
-<!-- index.ejs -->
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>top</title>
+  <title>在庫管理ツール</title>
+  <link rel="stylesheet" href="/static/styles.css"> <!-- CSSファイルを追加 -->
 </head>
-
 <body>
-  <ul class="user-list">
-    <% for (const user of users) { %>
-      <li class="user-name"><%= user %></li>
+  <h1>在庫管理ツール</h1>
+  <ul class="item-list">
+    <% for (const item of items) { %>
+      <li class="item-name">
+        <%= item.name %>
+        <form action="/api/item/<%= item._id %>?_method=DELETE" method="POST" style="display:inline;">
+          <button type="submit">削除</button>
+        </form>
+      </li>
     <% } %>
   </ul>
   <input type="text" class="input-text" />
-  <button class="send-button">送信</button>
-  <script src="/static/index.js" defer></script>
+  <button class="send-button">商品追加</button>
+  <script src="/static/index2.js" defer></script>
 </body>
-
 </html>
+
